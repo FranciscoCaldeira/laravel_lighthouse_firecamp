@@ -1,0 +1,12 @@
+type Query {
+    cars: [Car!]! @all
+    car(id: ID @eq): Car @find
+}
+
+type Car {
+    id: ID!
+    name: String!
+    model: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
