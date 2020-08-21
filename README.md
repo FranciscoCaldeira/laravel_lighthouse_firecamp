@@ -11,7 +11,7 @@ INSERT INTO `laravel_ligth_fire`.`cars` (`id`, `name`, `model`, `created_at`, `u
 
 INSERT INTO `laravel_ligth_fire`.`users` (`id`, `name`, `email`, `email_verified_at`, `password`, `created_at`, `updated_at`) VALUES ('1', 'jhon', 'jhon@jhon.pt', '2020-08-21 19:14:36', 'adasdqw', '2020-08-21 19:14:38', '2020-08-21 19:14:39');
 
-INSERT INTO `laravel_ligth_fire`.`users` (`id`, `name`, `email`, `email_verified_at`, `created_at`) VALUES ('2', 'doe', 'doe@doe.pt', '2020-08-21 19:14:47', '2020-08-21 19:14:48');
+INSERT INTO `laravel_ligth_fire`.`users` (`id`, `name`, `email`, `email_verified_at`, `password`, `created_at`, `updated_at`) VALUES ('2', 'doe', 'doe@doe.pt', '2020-08-21 19:14:47', 'adasdqw','2020-08-21 19:14:48','2020-08-21 19:14:48');
 
 5. Check the schema created in graphql\test\ folder have car.graphql and user.graphql. These schemas are imported according to the Lighthouse documentation (https://lighthouse-php.com/4.16/digging-deeper/schema-organisation.html#schema-imports) in the graphql\schema.graphql.
 6. On terminal run the command "php artisan serve" and check for laravel index page on browser.
