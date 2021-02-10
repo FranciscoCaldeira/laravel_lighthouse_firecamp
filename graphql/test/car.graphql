@@ -1,6 +1,10 @@
-type Query {
+extend type Query {
     cars: [Car!]! @all
     car(id: ID @eq): Car @find
+}
+
+extend type Mutation {
+    createCar(input: CreateCarInput! @spread): Car! @create
 }
 
 type Car {
@@ -9,4 +13,9 @@ type Car {
     model: String!
     created_at: DateTime!
     updated_at: DateTime!
+}
+
+input CreateCarInput {
+    name: String!
+    model: String!
 }
