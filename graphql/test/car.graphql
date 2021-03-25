@@ -15,7 +15,9 @@ type Car {
     updated_at: DateTime!
 }
 
-input CreateCarInput {
+input CreateCarInput @validator {
     name: String!
     model: String!
+    color: String!
+    color_confirmation: String!
 }

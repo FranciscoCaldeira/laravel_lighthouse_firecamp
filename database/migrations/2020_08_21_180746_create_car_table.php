@@ -17,6 +17,8 @@ class CreateCarTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('model');
+            $table->string('color');
+            $table->string('color_confirmation');
             $table->timestamps();
         });
     }
